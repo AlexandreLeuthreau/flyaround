@@ -1,3 +1,7 @@
+wcs_coav:
+    resource: "@WCSCoavBundle/Resources/config/routing/flight.yml"
+    prefix:   /flight
+
 _index:
     path:     /
     defaults: { _controller: "WCSCoavBundle:Flight:index" }

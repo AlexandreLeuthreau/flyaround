@@ -1,14 +1,18 @@
+wcs_coav_planemodel:
+        resource: "@WCSCoavBundle/Resources/config/routing/planemodel.yml"
+        prefix:   /planemodel
+
 wcs_coav:
     resource: "@WCSCoavBundle/Resources/config/routing/flight.yml"
-    prefix:   /
+    prefix:   /flight
 
 wcs_coav:
     resource: "@WCSCoavBundle/Resources/config/routing/reservation.yml"
-    prefix:   /
+    prefix:   /reservation
 
 wcs_coav:
     resource: "@WCSCoavBundle/Resources/config/routing/terrain.yml"
-    prefix:   /
+    prefix:   /terrain
 
 
 wcs_coav_homepage:
