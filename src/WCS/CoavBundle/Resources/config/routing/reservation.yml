@@ -1,28 +1,24 @@
-wcs_coav:
-    resource: "@WCSCoavBundle/Resources/config/routing/reservation.yml"
-    prefix:   /reservation
-
-_index:
+reservation_index:
     path:     /
     defaults: { _controller: "WCSCoavBundle:Reservation:index" }
     methods:  GET
 
-_show:
+reservation_show:
     path:     /{id}/show
     defaults: { _controller: "WCSCoavBundle:Reservation:show" }
     methods:  GET
 
-_new:
+reservation_new:
     path:     /new
     defaults: { _controller: "WCSCoavBundle:Reservation:new" }
     methods:  [GET, POST]
 
-_edit:
+reservation_edit:
     path:     /{id}/edit
     defaults: { _controller: "WCSCoavBundle:Reservation:edit" }
     methods:  [GET, POST]
 
-_delete:
+reservation_delete:
     path:     /{id}/delete
     defaults: { _controller: "WCSCoavBundle:Reservation:delete" }
     methods:  DELETE

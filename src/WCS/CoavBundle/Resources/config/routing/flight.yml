@@ -1,28 +1,24 @@
-wcs_coav:
-    resource: "@WCSCoavBundle/Resources/config/routing/flight.yml"
-    prefix:   /flight
-
-_index:
+flight_index:
     path:     /
     defaults: { _controller: "WCSCoavBundle:Flight:index" }
     methods:  GET
 
-_show:
+flight_show:
     path:     /{id}/show
     defaults: { _controller: "WCSCoavBundle:Flight:show" }
     methods:  GET
 
-_new:
+flight_new:
     path:     /new
     defaults: { _controller: "WCSCoavBundle:Flight:new" }
     methods:  [GET, POST]
 
-_edit:
+flight_edit:
     path:     /{id}/edit
     defaults: { _controller: "WCSCoavBundle:Flight:edit" }
     methods:  [GET, POST]
 
-_delete:
+flight_delete:
     path:     /{id}/delete
     defaults: { _controller: "WCSCoavBundle:Flight:delete" }
     methods:  DELETE
